@@ -9,7 +9,7 @@ return [
 
     'hero' => [
         'title' => 'Welcome to',
-        'desc' => 'Best forestry Blog',
+        // 'desc' => 'Best forestry Blog',
         'cta' => 'Start Reading'
     ]
 ];

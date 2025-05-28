@@ -28,7 +28,7 @@
                     <span class="text-green-400">Better Globe Forestry</span>
                     <span class="text-white">Blog</span>
                 </h1>
-                <p class="mt-4 text-lg">{{ __('home.hero.desc') }}</p>
+                {{-- <p class="mt-4 text-lg">{{ __('home.hero.desc') }}</p> --}}
                 <a href="{{ route('posts.index') }}"
                    class="mt-6 inline-block bg-green-600 hover:bg-green-700 px-6 py-2 text-lg font-semibold rounded">
                     {{ __('home.hero.cta') }}
@@ -57,7 +57,7 @@
     <div class="w-full mb-10">
         <div class="mb-16">
             <h2 class="mt-16 mb-5 text-3xl font-bold text-green-500"> {{ __('home.featured_posts') }} </h2>
-            <h2 class="mt-16 mb-5 text-3xl font-bold text-green-500"> {{ __('home.featured_posts') }} </h2>
+            {{-- <h2 class="mt-16 mb-5 text-3xl font-bold text-green-500"> {{ __('home.featured_posts') }} </h2> --}}
             <div class="w-full">
                 <div class="grid grid-cols-3 gap-10 w-full">
                     @foreach ($featuredPosts as $post)
@@ -76,7 +76,7 @@
         <hr>
 
         <h2 class="mt-16 mb-5 text-3xl font-bold text-green-500">{{ __('home.latest_posts') }}</h2>
-        <h2 class="mt-16 mb-5 text-3xl font-bold text-green-500">{{ __('home.latest_posts') }}</h2>
+        {{-- <h2 class="mt-16 mb-5 text-3xl font-bold text-green-500">{{ __('home.latest_posts') }}</h2> --}}
         <div class="w-full mb-5">
             <div class="grid grid-cols-3 gap-10 w-full">
                 @foreach ($latestPosts as $post)
