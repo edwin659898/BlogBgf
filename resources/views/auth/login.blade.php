@@ -51,7 +51,7 @@
 
             {{-- socials --}}
             <div class="mt-6 flex justify-center space-x-4">
-                <a href="{{ route('google.login') }}"
+                <a href="{{route('socialite','google')}}"
                    class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-red-700 transition">
                     Sign in with Google
                 </a>

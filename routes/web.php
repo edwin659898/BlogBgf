@@ -44,12 +44,12 @@ Route::middleware([
 
 // socialite routes
 // Google
-Route::get('auth/google', [SocialAuthController::class, 'redirectToGoogle'])->name('google.login');
-Route::get('auth/google/callback', [SocialAuthController::class, 'handleGoogleCallback']);
-// Route::prefix('auth')->group(function () {
-//     Route::get('/{key}/redirect', 'SocialiteController@redirectToGoogle')->name('socialite');
-//     Route::get('/{key}/callback', 'SocialiteController@handleGoogleCallback');
-// });
+// Route::get('auth/google', [SocialAuthController::class, 'redirectToGoogle'])->name('google.login');
+// Route::get('auth/google/callback', [SocialAuthController::class, 'handleGoogleCallback']);
+Route::prefix('auth')->group(function () {
+    Route::get('/{key}/redirect', [SocialAuthController::class, 'redirectToGoogle'])->name('socialite');
+    Route::get('/{key}/callback', [SocialAuthController::class, 'handleGoogleCallback']);
+});
 
 // Facebook
 // Route::get('auth/facebook', [SocialAuthController::class, 'redirectToFacebook'])->name('facebook.login');
