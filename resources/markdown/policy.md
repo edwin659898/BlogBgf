@@ -8,5 +8,5 @@ The Company does not trade to external parties any information that is sent to u
 Information that is not personal, such as comments, ideas and suggestions, shall be deemed non-confidential and the Company shall be free to use and disclose this information in order to assist others, without any obligation to the provider of the information.
 
 
-<p>Copy right 2025 @BGF-IT</p>
+<p>Copy right 2025 Better GLobe Forestry</p>
 

@@ -8,4 +8,4 @@ Any reliance you place on such information is therefore strictly at your own ris
 
 <!-- We have no control over the nature, content and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.    -->
 
-<p>Copy right 2025 @BGF-IT</p>
+<p>Copy right 2025 Better GLobe Forestry</p>

@@ -46,6 +46,23 @@
                     {{ __('Log in') }}
                 </x-button>
             </div>
+
+
+
+            {{-- socials --}}
+            <div class="mt-6 flex justify-center space-x-4">
+                <a href="{{ route('google.login') }}"
+                   class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-red-700 transition">
+                    Sign in with Google
+                </a>
+            
+                {{-- <a href="{{ route('facebook.login') }}"
+                   class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+                    Sign in with Facebook
+                </a> --}}
+            </div>
+
+            {{-- socials end --}}
         </form>
     </x-authentication-card>
 </x-app-layout>
