@@ -32,11 +32,13 @@ To get started with the Blog App on your local machine, follow these steps:
 - [Composer](https://getcomposer.org/)
 - [Node.js and npm](https://nodejs.org/)
 - Laravel installed globally *(optional but recommended)*
+- Run npm run build *(optional but recommended)*
+- Run php artisan serve *(optional but recommended)*
 
 ### 📦 Setup Instructions
 
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/blog.git
-   cd blog
+   git clone https://github.com/edwin659898/BlogBg.git
+   cd BlogBg
