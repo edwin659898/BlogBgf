@@ -6,12 +6,12 @@
         </a>
         <div class="ml-10 top-menu">
             <div class="flex space-x-4">
-                <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
+                <a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'font-bold underline' : '' }}">
                     {{ __('menu.home') }}
-                </x-nav-link>
-                <x-nav-link href="{{ route('posts.index') }}" :active="request()->routeIs('posts.index')">
+                </a>
+                <a href="{{ route('posts.index') }}" class="{{ request()->routeIs('posts.index') ? 'font-bold underline' : '' }}">
                     {{ __('menu.blog') }}
-                </x-nav-link>
+                </a>
                 <a href="https://betterglobeforestry.com" target="_blank">Our Website </a>
             </div>
         </div>

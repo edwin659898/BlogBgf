@@ -1,8 +1,8 @@
 <div class="flex space-x-5">
-    <x-nav-link href="{{ route('login') }}" :active="request()->routeIs('login')">
+    <a href="{{ route('login') }}" class="text-blue-600 hover:underline">
         {{ __('menu.login') }}
-    </x-nav-link>
-    <x-nav-link href="{{ route('register') }}" :active="request()->routeIs('register')">
+    </a>
+    <a href="{{ route('register') }}" class="text-blue-600 hover:underline">
         {{ __('menu.register') }}
-    </x-nav-link>
+    </a>
 </div>

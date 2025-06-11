@@ -55,9 +55,30 @@
 
 
     <div class="w-full mb-10">
-        <div class="mb-16">
+
+        <h2 class="mt-16 mb-5 text-3xl font-bold text-green-500">{{ __('home.latest_posts') }}</h2>
+        <div class="w-full mb-5">
+            <div class="grid grid-cols-3 gap-10 w-full">
+                @foreach ($latestPosts as $post)
+
+                        <div class="md:col-span-1 col-span-3">                        
+                             <x-posts.post-card :post="$post" class="md:col-span-1 col-span-3" />
+                        </div>
+
+                    @endforeach
+            </div>
+        </div>
+        <a class="block mt-10 text-lg font-semibold text-center text-green-500" href="{{ route('posts.index') }}">
+        <a class="block mt-10 text-lg font-semibold text-center text-green-500" href="{{ route('posts.index') }}">
+            {{ __('home.more_posts') }}</a>
+
+
+            <hr>
+
+
+
+            <div class="mb-16">
             <h2 class="mt-16 mb-5 text-3xl font-bold text-green-500"> {{ __('home.featured_posts') }} </h2>
-            {{-- <h2 class="mt-16 mb-5 text-3xl font-bold text-green-500"> {{ __('home.featured_posts') }} </h2> --}}
             <div class="w-full">
                 <div class="grid grid-cols-3 gap-10 w-full">
                     @foreach ($featuredPosts as $post)
@@ -73,23 +94,5 @@
             <a class="block mt-10 text-lg font-semibold text-center text-green-500" href="{{ route('posts.index') }}">
                 {{ __('home.more_posts') }}</a>
         </div>
-        <hr>
-
-        <h2 class="mt-16 mb-5 text-3xl font-bold text-green-500">{{ __('home.latest_posts') }}</h2>
-        {{-- <h2 class="mt-16 mb-5 text-3xl font-bold text-green-500">{{ __('home.latest_posts') }}</h2> --}}
-        <div class="w-full mb-5">
-            <div class="grid grid-cols-3 gap-10 w-full">
-                @foreach ($latestPosts as $post)
-
-                        {{-- <div class="md:col-span-1 col-span-3">                         --}}
-                             <x-posts.post-card :post="$post" class="md:col-span-1 col-span-3" />
-                        {{-- </div> --}}
-
-                    @endforeach
-            </div>
-        </div>
-        <a class="block mt-10 text-lg font-semibold text-center text-green-500" href="{{ route('posts.index') }}">
-        <a class="block mt-10 text-lg font-semibold text-center text-green-500" href="{{ route('posts.index') }}">
-            {{ __('home.more_posts') }}</a>
     </div>
 </x-app-layout>
